@@ -1,0 +1,551 @@
+newmtl m0
+map_Kd 顔.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m1
+map_Kd 肌.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m2
+map_Kd 肌.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 0
+
+newmtl m3
+map_Kd 肌.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 0
+
+newmtl m4
+map_Kd まつげ.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m5
+map_Kd 二重.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m6
+map_Kd 黒.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m7
+map_Kd 瞳2.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m8
+map_Kd 白.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m9
+map_Kd 白.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m10
+map_Kd 肌.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m11
+map_Kd 髪.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m12
+map_Kd 髪.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0 0 0
+Ns 5
+d 0.9
+
+newmtl m13
+map_Kd 髪.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0 0 0
+Ns 5
+d 1
+
+newmtl m14
+map_Kd 髪.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0 0 0
+Ns 5
+d 1
+
+newmtl m15
+map_Kd 髪.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0 0 0
+Ns 5
+d 1
+
+newmtl m16
+map_Kd 髪.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0 0 0
+Ns 5
+d 1
+
+newmtl m17
+map_Kd シュシュ1.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.4 0.4 0.4
+Ns 10
+d 1
+
+newmtl m18
+map_Kd 黒.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.4 0.4 0.4
+Ns 10
+d 1
+
+newmtl m19
+map_Kd 黒.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.4 0.4 0.4
+Ns 10
+d 1
+
+newmtl m20
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.4 0.4 0.4
+Ns 10
+d 1
+
+newmtl m21
+map_Kd 黄色.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.4 0.4 0.4
+Ns 10
+d 1
+
+newmtl m22
+map_Kd 黒.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0 0 0
+Ns 5
+d 1
+
+newmtl m23
+map_Kd 口.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0 0 0
+Ns 5
+d 1
+
+newmtl m24
+map_Kd 白.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ns 5
+d 1
+
+newmtl m25
+map_Kd 舌.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.1 0.1 0.1
+Ns 5
+d 1
+
+newmtl m26
+map_Kd ほほ染.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0 0 0
+Ns 5
+d 0
+
+newmtl m27
+map_Kd 黒.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m28
+map_Kd 黒.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 0.9
+
+newmtl m29
+map_Kd 制服基本色.tga
+Ka 0.48 0.48 0.48
+Kd 0.8 0.8 0.8
+Ks 0.2 0.2 0.2
+Ns 3
+d 0.98
+
+newmtl m30
+map_Kd 白.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 0.98
+
+newmtl m31
+map_Kd 制服基本色.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 0.98
+
+newmtl m32
+map_Kd 制服基本色.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 0.98
+
+newmtl m33
+map_Kd 浮き輪.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 0.98
+
+newmtl m34
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.2 0.2 0.2
+Ns 5
+d 0.98
+
+newmtl m35
+map_Kd 白.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0 0 0
+Ns 5
+d 1
+
+newmtl m36
+map_Kd ピンク.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.2 0.2 0.2
+Ns 5
+d 1
+
+newmtl m37
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.2 0.2 0.2
+Ns 5
+d 0
+
+newmtl m38
+map_Kd ニーソ1.tga
+Ka 0.48 0.48 0.48
+Kd 0.8 0.8 0.8
+Ks 0.12 0.12 0.12
+Ns 10
+d 1
+
+newmtl m39
+map_Kd 白.tga
+Ka 0.48 0.48 0.48
+Kd 0.8 0.8 0.8
+Ks 0.12 0.12 0.12
+Ns 5
+d 1
+
+newmtl m40
+map_Kd 吊元.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m41
+map_Kd 固定.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m42
+map_Kd 固定バックル.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.15 0.15 0.15
+Ns 5
+d 1
+
+newmtl m43
+map_Kd ヒール.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ns 10
+d 1
+
+newmtl m44
+map_Kd ヒール.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ns 10
+d 1
+
+newmtl m45
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 5
+d 1
+
+newmtl m46
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 5
+d 1
+
+newmtl m47
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 5
+d 1
+
+newmtl m48
+map_Kd グレー.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 5
+d 1
+
+newmtl m49
+map_Kd グレー.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 5
+d 1
+
+newmtl m50
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 5
+d 1
+
+newmtl m51
+map_Kd 艦黒.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 5
+d 1
+
+newmtl m52
+map_Kd 艦黒.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 5
+d 1
+
+newmtl m53
+map_Kd 装身具.tga
+Ka 0.48 0.48 0.48
+Kd 0.8 0.8 0.8
+Ks 0.24 0.24 0.24
+Ns 5
+d 1
+
+newmtl m54
+map_Kd 連）船体.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m55
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m56
+map_Kd 赤.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m57
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m58
+map_Kd 連）砲台.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m59
+map_Kd 艦黒.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m60
+map_Kd 連）船体.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m61
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m62
+map_Kd 白.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m63
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m64
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m65
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m66
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m67
+map_Kd 艦ベース.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+
+newmtl m68
+map_Kd こげ茶.tga
+Ka 0.6 0.6 0.6
+Kd 0.8 0.8 0.8
+Ks 0.3 0.3 0.3
+Ns 8
+d 1
+

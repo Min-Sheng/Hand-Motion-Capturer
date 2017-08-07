@@ -1,0 +1,120 @@
+# 0:
+AK8963 initialized for active data mode....
+Mag Calibration: Wave device in a figure eight until done!
+Mag Calibration done!
+AK8963 mag biases (mG)
+21.72
+-42.03
+63.26
+AK8963 mag scale (mG)
+0.94
+1.04
+1.02
+# 1:
+AK8963 initialized for active data mode....
+Mag Calibration: Wave device in a figure eight until done!
+Mag Calibration done!
+AK8963 mag biases (mG)
+42.45
+56.98
+-248.84
+AK8963 mag scale (mG)
+1.10
+0.83
+1.14
+# 2:
+AK8963 initialized for active data mode....
+Mag Calibration: Wave device in a figure eight until done!
+Mag Calibration done!
+AK8963 mag biases (mG)
+224.91
+262.68
+-22.08
+AK8963 mag scale (mG)
+1.11
+0.90
+1.01
+# 3:
+AK8963 initialized for active data mode....
+Mag Calibration: Wave device in a figure eight until done!
+Mag Calibration done!
+AK8963 mag biases (mG)
+189.98
+245.54
+-88.12
+AK8963 mag scale (mG)
+0.95
+1.00
+1.05
+# 4:
+AK8963 initialized for active data mode....
+Mag Calibration: Wave device in a figure eight until done!
+Mag Calibration done!
+AK8963 mag biases (mG)
+281.38
+82.44
+-65.66
+AK8963 mag scale (mG)
+1.15
+1.07
+0.83
+# 5:
+AK8963 initialized for active data mode....
+Mag Calibration: Wave device in a figure eight until done!
+Mag Calibration done!
+AK8963 mag biases (mG)
+225.82
+-48.39
+-314.46
+AK8963 mag scale (mG)
+1.02
+0.96
+1.02
+# 6:
+AK8963 initialized for active data mode....
+Mag Calibration: Wave device in a figure eight until done!
+Mag Calibration done!
+AK8963 mag biases (mG)
+216.86
+-111.12
+-317.92
+AK8963 mag scale (mG)
+1.14
+0.94
+0.94
+# 7:
+AK8963 initialized for active data mode....
+Mag Calibration: Wave device in a figure eight until done!
+Mag Calibration done!
+AK8963 mag biases (mG)
+295.72
+184.60
+24.19
+AK8963 mag scale (mG)
+1.00
+0.74
+1.53
+# 8:
+AK8963 initialized for active data mode....
+Mag Calibration: Wave device in a figure eight until done!
+Mag Calibration done!
+AK8963 mag biases (mG)
+276.00
+-329.77
+-431.95
+AK8963 mag scale (mG)
+0.70
+1.29
+1.25
+# 9:
+AK8963 initialized for active data mode....
+Mag Calibration: Wave device in a figure eight until done!
+Mag Calibration done!
+AK8963 mag biases (mG)
+204.32
+-197.15
+-198.70
+AK8963 mag scale (mG)
+1.00
+0.93
+1.08
