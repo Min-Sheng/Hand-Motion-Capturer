@@ -1,8 +1,7 @@
-/* MPU9250 Basic Example Code
- by: Kris Winer
- date: April 1, 2014
- license: Beerware - Use this code however you'd like. If you 
- find it useful you can buy me a beer some time.
+/* Glove MPU9250AHRS Calibration Code
+
+ by: Vincent
+ modified and extended from: Kris Winer
  
  Demonstrate basic MPU-9250 functionality including parameterizing the register addresses, initializing the sensor, 
  getting properly scaled accelerometer, gyroscope, and magnetometer data out. Added display functions to 
