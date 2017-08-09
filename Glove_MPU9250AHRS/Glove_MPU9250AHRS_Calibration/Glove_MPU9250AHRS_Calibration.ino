@@ -1,4 +1,4 @@
-/* Glove MPU9250AHRS Calibration Code
+/*Glove MPU9250AHRS Calibration Code
 
  by: Vincent
  modified and extended from: Kris Winer

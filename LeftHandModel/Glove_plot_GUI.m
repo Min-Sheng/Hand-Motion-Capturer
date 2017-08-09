@@ -186,7 +186,7 @@ if(( s_available)&&(~start_check)&&(~pause_check)&&(~stop_check)&&(ishandle(hand
         end
     end
     P_0= [y(1,1), p(1,1), r(1,1)];
-    T3_0=[y(1,2), p(1,2), r(1,2)];
+    T3_0=[y(1,2)+5, p(1,2), r(1,2)];
     T2_0=[y(1,3), p(1,3), r(1,3)];
     T1_0=[y(1,4), p(1,4), r(1,4)];
     I3_0=[y(1,5), p(1,5), r(1,5)];
@@ -257,36 +257,34 @@ while(( s_available)&&(~pause_check)&&(~stop_check)&&(ishandle(handles.output)))
              number=number+1;
              % first plot
              if(t_pre==0&&first==1)
-             P= [y(1,1), p(1,1), r(1,1)]-P_0;
-             T3=[y(1,2), p(1,2), r(1,2)]-T3_0;
-             T2=[y(1,3), p(1,3), r(1,3)]-T2_0;
-             T1=[y(1,4), p(1,4), r(1,4)]-T1_0;
-             I3=[y(1,5), p(1,5), r(1,5)]-I3_0;
-             I2=[y(1,6), p(1,6), r(1,6)]-I2_0;
-             I1=[y(1,7), p(1,7), r(1,7)]-I1_0;
-             M3=[y(1,8), p(1,8), r(1,8)]-M3_0;
-             M2=[y(1,9), p(1,9), r(1,9)]-M2_0;
-             M1=[y(1,10), p(1,10), r(1,10)]-M1_0;
-             qT=[JointAngle(T3(3), P(3)), JointAngle(T3(1), P(1)), JointAngle(T2(3), T3(3)), JointAngle(T2(1), T3(1)), JointAngle(T1(3), T2(3))];
-             qI=[JointAngle(I3(1), P(1)), JointAngle(I3(3), P(3)), JointAngle(I2(3), I3(3)), JointAngle(I1(3), I2(3))];
-             qM=[JointAngle(M3(1), P(1)), JointAngle(M3(3), P(3)), JointAngle(M2(3), M3(3)), JointAngle(M1(3), M2(3))];
-             % Angles of Joints
-             theta = {[90,  -qT(2), -qT(3), -qT(4), -qT(5)];[90, -qI(3), -qI(3), -qI(4)];[90, -qM(2), -qM(3), -qM(4)];[90, 0, 0, 0];[90, 0, 0, 0]};                                % joint angle ( degree )
-%              theta = {[90-qT(1), -qT(2), -qT(3), qT(4), -qT(5)];[90+qI(1), -qI(2), -qI(3), -qI(4)];[90+qM(1), -qM(2), -qM(3), -qM(4)];[90,60, 120, 80];[90,60, 120, 80]};                                % joint angle (degree )
-             theta=cellfun(@deg2rad,theta,'UniformOutput',false);
-             % Calculate the Model
-             [W,H,coordinate_num]=LeftHand(theta); %W: the position vecter w.r.t global system; H: the rotation matrix w.r.t global system
+                 P= [y(1,1), p(1,1), r(1,1)]-P_0;
+                 T3=[y(1,2), p(1,2), r(1,2)]-T3_0;
+                 T2=[y(1,3), p(1,3), r(1,3)]-T2_0;
+                 T1=[y(1,4), p(1,4), r(1,4)]-T1_0;
+                 I3=[y(1,5), p(1,5), r(1,5)]-I3_0;
+                 I2=[y(1,6), p(1,6), r(1,6)]-I2_0;
+                 I1=[y(1,7), p(1,7), r(1,7)]-I1_0;
+                 M3=[y(1,8), p(1,8), r(1,8)]-M3_0;
+                 M2=[y(1,9), p(1,9), r(1,9)]-M2_0;
+                 M1=[y(1,10), p(1,10), r(1,10)]-M1_0;
+                 qT=[JointAngle(T3(3), P(1)), JointAngle(T3(1), P(3)), JointAngle(T2(3), T3(3)), JointAngle(T2(1), T3(1)), JointAngle(T1(3), T2(3))];
+                 qI=[JointAngle(I3(1), P(1)), JointAngle(I3(3), P(3)), JointAngle(I2(3), I3(3)), JointAngle(I1(3), I2(3))];
+                 qM=[JointAngle(M3(1), P(1)), JointAngle(M3(3), P(3)), JointAngle(M2(3), M3(3)), JointAngle(M1(3), M2(3))];
+                 qT=[qT(1) -qT(2) -qT(5) -qT(4) -qT(5)];
+                 qI=[qI(1) -qI(2) -qI(3) -qI(4)];
+                 qM=[qM(1) -qM(2) -qM(3) -qM(4)];
+                 [qT,qI,qM]=RestrictedAngle(qT,qI,qM);
+                 % Angles of Joints
+                 theta = {[90 + qT(1),  qT(2), qT(3), qT(4), qT(5)];[90 + qI(1), qI(2), qI(3), qI(4)];[90 + qM(1), qM(2), qM(3), qM(4)];[90, 0, 0, 0];[90, 0, 0, 0]};                                % joint angle ( degree )
+                 theta=cellfun(@deg2rad,theta,'UniformOutput',false);
+                 % Calculate the Model
+                 [W,H,coordinate_num]=LeftHand(theta); %W: the position vecter w.r.t global system; H: the rotation matrix w.r.t global system
                  t_pre=t;
                  first=0;
                  for i=1:5
-                     for k=2:coordinate_num(i)
-                         DrawLine(W{i}{k-1}, W{i}{k},'o');
-                     end
-%                      if(i==2)
-%                         DrawLine(W{i-1}{3}, W{i}{2});
-%                      elseif(i>2)
-%                         DrawLine(W{i-1}{2}, W{i}{2});
-%                      end
+                    for k=2:coordinate_num(i)
+                        DrawLine(W{i}{k-1}, W{i}{k},'.');
+                    end
                  end
                  drawnow
              end
@@ -302,27 +300,25 @@ while(( s_available)&&(~pause_check)&&(~stop_check)&&(ishandle(handles.output)))
                  M3=[y(1,8), p(1,8), r(1,8)]-M3_0;
                  M2=[y(1,9), p(1,9), r(1,9)]-M2_0;
                  M1=[y(1,10), p(1,10), r(1,10)]-M1_0;
-                 qT=[JointAngle(T3(3), P(3)), JointAngle(T3(1), P(1)), JointAngle(T2(3), T3(3)), JointAngle(T2(1), T3(1)), JointAngle(T1(3), T2(3))];
+                 qT=[JointAngle(T3(3), P(1)), JointAngle(T3(1), P(3)), JointAngle(T2(3), T3(3)), JointAngle(T2(1), T3(1)), JointAngle(T1(3), T2(3))];
                  qI=[JointAngle(I3(1), P(1)), JointAngle(I3(3), P(3)), JointAngle(I2(3), I3(3)), JointAngle(I1(3), I2(3))];
                  qM=[JointAngle(M3(1), P(1)), JointAngle(M3(3), P(3)), JointAngle(M2(3), M3(3)), JointAngle(M1(3), M2(3))];
+                 qT=[qT(1) -qT(2) -qT(5) -qT(4) -qT(5)];
+                 qI=[qI(1) -qI(2) -qI(3) -qI(4)];
+                 qM=[qM(1) -qM(2) -qM(3) -qM(4)];
+                 [qT,qI,qM]=RestrictedAngle(qT,qI,qM);
                  % Angles of Joints
-                 theta = {[90,  -qT(2), -qT(3), -qT(4), -qT(5)];[90, -qI(3), -qI(3), -qI(4)];[90, -qM(2), -qM(3), -qM(4)];[90, 0, 0, 0];[90, 0, 0, 0]};                        % joint angle ( degree )
-    %              theta = {[90-qT(1), -qT(2), -qT(3), qT(4), -qT(5)];[90+qI(1), -qI(2), -qI(3), -qI(4)];[90+qM(1), -qM(2), -qM(3), -qM(4)];[90,60, 120, 80];[90,60, 120, 80]};                                % joint angle ( degree )
+                 theta = {[90 + qT(1),  qT(2), qT(3), qT(4), qT(5)];[90 + qI(1), qI(2), qI(3), qI(4)];[90 + qM(1), qM(2), qM(3), qM(4)];[90, 0, 0, 0];[90, 0, 0, 0]};                                % joint angle ( degree )
                  theta=cellfun(@deg2rad,theta,'UniformOutput',false);
-                % Calculate the Model
+                 % Calculate the Model
                  [W,H,coordinate_num]=LeftHand(theta); %W: the position vecter w.r.t global system; H: the rotation matrix w.r.t global system
                  t_pre=t;
                  for i=1:5
                     for k=2:coordinate_num(i)
-                       DrawLine(W{i}{k-1}, W{i}{k},'o');
+                       DrawLine(W{i}{k-1}, W{i}{k},'.');
                     end
-%                     if(i==2)
-%                         DrawLine(W{i-1}{3}, W{i}{2});
-%                     elseif(i>2)
-%                         DrawLine(W{i-1}{2}, W{i}{2});
-%                     end
                  end
-                drawnow
+                 drawnow
              end
         end
           t=t+1;

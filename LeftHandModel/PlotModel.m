@@ -5,17 +5,41 @@ clc
 %% Sketch Setting
 figure('Name','Left Hand Model');
 axis equal;                                  % Set the propotion of the axes are eual 
-axis tight;
+% axis tight;
 xlabel('X-axis(cm)');
 ylabel('Y-axis(cm)');
 zlabel('Z-axis(cm)');
 % view(170,-90)
-view(30,45)
+% view(30,45)
+pan=60;
+tilt=45;
+view(pan,tilt)
 grid
 hold on
 cla
+% %% Angles of Joints
+% theta = {[90, 0, 0, 0, 0];[90, 0, 0, 0];[90, 0, 0, 0];[90, 0, 0, 0];[90, 0, 0, 0]};                                % joint angle (degree )
+% theta=cellfun(@deg2rad,theta,'UniformOutput',false);
+% %% Calculate the Model
+% [W,H,coordinate_num]=LeftHand(theta); %W: the position vecter w.r.t global system; H: the rotation matrix w.r.t global system
+% %% Real-Time Plot
+% for i=1:5
+% %     DrawCoordinate([num2str(i),'_','-','_','0'], W{i}{1}, H{i}{1}*1.5);
+%     for k=2:coordinate_num(i)
+%         DrawLine(W{i}{k-1}, W{i}{k},'.');
+%     end
+%     if(i==2)
+%         DrawLine(W{i-1}{3}, W{i}{2});
+%     elseif(i>2)
+%         DrawLine(W{i-1}{2}, W{i}{2});
+%     end
+% 
+% %         DrawCylinder(W{i}{k-1}, H{i}{k-1});
+% %         DrawCoordinate([num2str(i),'_','-','_','0'+k-1], W{i}{k}, H{i}{k});
+% end
 %% Angles of Joints
-theta = {[90+5, 10, 50, 0, 90];[90, 90, 145, 75];[90, 100, 145, 75];[90, 105, 145, 75];[90, 110, 145, 75]};                                % joint angle (degree )
+% theta = {[90+5, 10, 50, 0, 90];[90, 90, 145, 75];[90, 100, 145, 75];[90, 105, 145, 75];[90, 110, 145, 75]};                                % joint angle (degree )
+theta = {[90+5, 45, 5, 0, 10];[90, 5, 90, 30];[90, 0, 0, 0];[90, 0, 0, 0];[90, 0, 0, 0]};                                % joint angle (degree )
 theta=cellfun(@deg2rad,theta,'UniformOutput',false);
 %% Calculate the Model
 [W,H,coordinate_num]=LeftHand(theta); %W: the position vecter w.r.t global system; H: the rotation matrix w.r.t global system

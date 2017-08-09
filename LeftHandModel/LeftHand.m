@@ -14,8 +14,8 @@ a = {[0 li(1) 0 li(2) li(3)]; [0 lii]; [0 liii]; [0 liv]; [0 lv]};              
 alpha = {[-pi/2, pi/2, -pi/2, pi/2, -pi/2];[-pi/2, 0, 0, 0];[-pi/2, 0, 0, 0];[-pi/2, 0, 0, 0];[-pi/2, 0, 0, 0]};   % link twist¡] radian )
 d = {[0, 0, 0, 0, 0];[0, 0, 0, 0];[0, 0, 0, 0];[0, 0, 0, 0];[0, 0, 0, 0]};                                         % link offset
 %% The Relative Position w.r.t the Global Coordinate System Original
-loo=[-13, -6, -6, -6.5, -7];
-gamma=deg2rad([-5, 7, 13, 20, 25]);
+loo=[-10, -6.5, -6, -6.5, -7];
+gamma=deg2rad([-5, 6, 13, 20, 25]);
 %% Define the Cell to Store the Transform Matrices, the Rotation Matrices, and the Positon Vecters
 for i=1:5
     T{i} = cell(coordinate_num(i),1);       % The transform matrices
