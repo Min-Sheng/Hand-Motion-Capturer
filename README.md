@@ -3,11 +3,11 @@
 The demo 1 vedio
 
 <iframe width="420" height="315"
-src="https://youtu.be/embed/F2W1sQky6yw">
+src="https://www.youtube.com/embed/F2W1sQky6yw&t=7s">
 </iframe>
 
 The demo 2 vedio
 
 <iframe width="420" height="315"
-src="https://youtu.be/embed/MhrreuvHw9w">
+src="https://www.youtube.com/embed/MhrreuvHw9w">
 </iframe>
