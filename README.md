@@ -1,4 +1,4 @@
-# Hand-Motion-Capturer
+# Hand Motion Capturer
 
 The demo 1 video
 
