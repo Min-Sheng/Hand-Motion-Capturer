@@ -21,8 +21,8 @@ src="https://www.youtube.com/embed/MhrreuvHw9w">
 <br>
 <br>
 <br>
-Back to my blog:
- <a href="https://min-sheng.github.io//">https://min-sheng.github.io//</a>
+<!--Back to my blog:
+ <a href="https://min-sheng.github.io//">https://min-sheng.github.io//</a>-->
 
-See other projects:
- <a href="https://min-sheng.github.io//projects/">https://min-sheng.github.io//projects/</a>
+<!--See other projects:
+ <a href="https://min-sheng.github.io//projects/">https://min-sheng.github.io//projects/</a>-->
